@@ -1,4 +1,7 @@
-package main.java.com.example.affordmed;
+package com.example.notify;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/notifications")

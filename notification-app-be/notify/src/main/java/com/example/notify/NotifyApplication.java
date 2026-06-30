@@ -1,13 +1,13 @@
-package com.example.affordmed;
+package com.example.notify;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AffordmedApplication {
+public class NotifyApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AffordmedApplication.class, args);
+		SpringApplication.run(NotifyApplication.class, args);
 	}
 
 }
