@@ -6,7 +6,7 @@ import jakarta.persistence.Id;
 @Entity
 public class Vehicle {
     @Id
-    private int id;
+    private Integer id;
 
     private int mechanicHours;
     private int duration;
