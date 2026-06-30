@@ -14,6 +14,13 @@ public class Vehicle {
     public Vehicle(){
     }
 
+    public void setTaskId(String taskId){
+        this.taskId = taskId;
+    }
+    public String getTaskId(){
+        return taskId;
+    }
+
     public void setDuration(int duration){
         this.duration = duration;
     }
@@ -24,14 +31,7 @@ public class Vehicle {
     public void setImpact(int impact){
         this.impact = impact;
     }
-    public int setImpact(){
+    public int getImpact(){
         return impact;
-    }
-
-    public void setTaskId(String taskId){
-        this.taskId = taskId;
-    }
-    public String getTaskId(){
-        return taskId;
     }
 }

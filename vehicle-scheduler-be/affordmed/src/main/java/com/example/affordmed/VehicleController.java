@@ -1,5 +1,6 @@
 package com.example.affordmed;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,12 +25,16 @@ public class VehicleController {
         return depoRepo.save(depot);
     }
     @GetMapping("/depots")
-    public List<Vehicle> viewDepot(Vehicle vehicle){
-        return vehicleRepo.findAll();
+    public List<Depot> viewDepot(Vehicle vehicle){
+        return depoRepo.findAll();
     }
 
     @PostMapping("/vehicles")
     public Vehicle addVehicle(@RequestBody Vehicle vehicle){
         return vehicleRepo.save(vehicle);
+    }
+    @GetMapping("/vehicles")
+    public List<Vehicle> viewVehicle(@RequestBody Vehicle vehicle){
+        return vehicleRepo.findAll();
     }
 }
