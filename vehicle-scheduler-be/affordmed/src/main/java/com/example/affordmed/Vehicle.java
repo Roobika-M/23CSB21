@@ -6,25 +6,12 @@ import jakarta.persistence.Id;
 @Entity
 public class Vehicle {
     @Id
-    private Integer id;
-
-    private int mechanicHours;
-    private int duration;
-    private int impact;
     private String taskId;
 
-    public void setId(int id){
-        this.id = id;
-    }
-    public int getId(){
-        return id;
-    }
+    private int duration;
+    private int impact;
 
-    public void setMechanicHours(int mechanicHours){
-        this.mechanicHours = mechanicHours;
-    }
-    public int getMechanicHours(){
-        return mechanicHours;
+    public Vehicle(){
     }
 
     public void setDuration(int duration){
